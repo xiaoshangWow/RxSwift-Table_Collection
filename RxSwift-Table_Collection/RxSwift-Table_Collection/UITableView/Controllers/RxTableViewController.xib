@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RxTableViewController" customModule="RxSwift_Table_Collection" customModuleProvider="target">
+            <connections>
+                <outlet property="rxTableView" destination="bdV-15-mIx" id="qMh-14-mXP"/>
+                <outlet property="searchBar" destination="nSo-S4-d9a" id="l0L-zb-djh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ifq-Or-8US"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nSo-S4-d9a">
+                    <rect key="frame" x="0.0" y="60" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-15-mIx">
+                    <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nSo-S4-d9a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Wj-RB-409"/>
+                <constraint firstItem="bdV-15-mIx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8W2-Tc-Jte"/>
+                <constraint firstAttribute="trailing" secondItem="bdV-15-mIx" secondAttribute="trailing" id="BJb-h2-S62"/>
+                <constraint firstItem="nSo-S4-d9a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="OWq-0g-U4L"/>
+                <constraint firstItem="bdV-15-mIx" firstAttribute="top" secondItem="nSo-S4-d9a" secondAttribute="bottom" id="QpX-8g-0Ob"/>
+                <constraint firstAttribute="bottom" secondItem="bdV-15-mIx" secondAttribute="bottom" id="hbC-bL-uwz"/>
+                <constraint firstAttribute="trailing" secondItem="nSo-S4-d9a" secondAttribute="trailing" id="oAy-Rd-qTb"/>
+            </constraints>
+            <point key="canvasLocation" x="22" y="86"/>
+        </view>
+    </objects>
+</document>

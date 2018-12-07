@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="R57-hm-zn6" customClass="RxCollectionViewCell" customModule="RxSwift_Table_Collection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="305" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-ic-4I8">
+                        <rect key="frame" x="0.0" y="0.0" width="305" height="222"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-Q3-AlX">
+                        <rect key="frame" x="0.0" y="192" width="305" height="30"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="OhD-ae-TDC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQY-tv-66g">
+                        <rect key="frame" x="0.0" y="0.0" width="305" height="25"/>
+                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="ElY-Fh-giZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jcg-ic-4I8" secondAttribute="trailing" id="6CF-yK-NDK"/>
+                <constraint firstAttribute="trailing" secondItem="VQY-tv-66g" secondAttribute="trailing" id="CR9-hA-w6R"/>
+                <constraint firstItem="lEM-Q3-AlX" firstAttribute="leading" secondItem="R57-hm-zn6" secondAttribute="leading" id="Omh-Tj-wQD"/>
+                <constraint firstAttribute="trailing" secondItem="lEM-Q3-AlX" secondAttribute="trailing" id="RDz-hu-1qm"/>
+                <constraint firstItem="jcg-ic-4I8" firstAttribute="top" secondItem="R57-hm-zn6" secondAttribute="top" id="aPR-zz-7K3"/>
+                <constraint firstAttribute="bottom" secondItem="jcg-ic-4I8" secondAttribute="bottom" id="bLA-uz-RV7"/>
+                <constraint firstAttribute="bottom" secondItem="lEM-Q3-AlX" secondAttribute="bottom" id="bfp-r4-rDQ"/>
+                <constraint firstItem="VQY-tv-66g" firstAttribute="leading" secondItem="R57-hm-zn6" secondAttribute="leading" id="oko-NY-ZvV"/>
+                <constraint firstItem="jcg-ic-4I8" firstAttribute="leading" secondItem="R57-hm-zn6" secondAttribute="leading" id="ycv-7g-mqL"/>
+                <constraint firstItem="VQY-tv-66g" firstAttribute="top" secondItem="R57-hm-zn6" secondAttribute="top" id="yze-0b-aGy"/>
+            </constraints>
+            <size key="customSize" width="195" height="50"/>
+            <connections>
+                <outlet property="focusLabel" destination="lEM-Q3-AlX" id="hES-ni-phy"/>
+                <outlet property="headImage" destination="jcg-ic-4I8" id="kVt-Oa-0Wt"/>
+                <outlet property="nameLabel" destination="VQY-tv-66g" id="i6h-2V-dvD"/>
+            </connections>
+            <point key="canvasLocation" x="-18.399999999999999" y="-35.082458770614693"/>
+        </collectionViewCell>
+    </objects>
+</document>

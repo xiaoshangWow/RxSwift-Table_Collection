@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'RxSwift-Table_Collection' do
+  use_frameworks!
+
+    # Swift三方库
+    # Rx
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+
+    # 网络请求
+    pod 'Moya/RxSwift'
+
+    # 图片处理
+    pod 'Kingfisher'
+
+    # 数据解析
+    pod 'ObjectMapper'
+
+
+    
+    # OC库
+    # MJRefresh
+    pod 'MJRefresh'
+    pod 'SVProgressHUD'
+
+end

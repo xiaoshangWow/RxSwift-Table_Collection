@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="101" id="scQ-S3-nEc" customClass="RxTableViewCell" customModule="RxSwift_Table_Collection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="scQ-S3-nEc" id="2Gx-jD-5yt">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yd5-pS-o01">
+                        <rect key="frame" x="10" y="10" width="80.5" height="80.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Yd5-pS-o01" secondAttribute="height" multiplier="1:1" id="MLM-x5-zDd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收到回复您稍等缴费年" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5G-Bb-zVx">
+                        <rect key="frame" x="100.5" y="21" width="255.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0Ri-fu-Brw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收到回复您稍等缴费年度数据海南房价都会说你复合大师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvN-eX-c2j">
+                        <rect key="frame" x="100.5" y="46" width="255.5" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yd5-pS-o01" firstAttribute="top" secondItem="2Gx-jD-5yt" secondAttribute="top" constant="10" id="4zE-tO-ZX2"/>
+                    <constraint firstItem="Yd5-pS-o01" firstAttribute="leading" secondItem="2Gx-jD-5yt" secondAttribute="leading" constant="10" id="6K7-AM-zeB"/>
+                    <constraint firstItem="QvN-eX-c2j" firstAttribute="leading" secondItem="Yd5-pS-o01" secondAttribute="trailing" constant="10" id="7V2-Kc-iv3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QvN-eX-c2j" secondAttribute="trailing" constant="10" id="A8t-Or-5ZY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QvN-eX-c2j" secondAttribute="bottom" constant="10" id="IgB-SN-Nmt"/>
+                    <constraint firstItem="s5G-Bb-zVx" firstAttribute="top" secondItem="2Gx-jD-5yt" secondAttribute="topMargin" constant="10" id="PId-V1-nI4"/>
+                    <constraint firstItem="QvN-eX-c2j" firstAttribute="top" secondItem="s5G-Bb-zVx" secondAttribute="bottom" constant="5" id="TBh-7y-bxc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="s5G-Bb-zVx" secondAttribute="trailing" constant="10" id="aCJ-nj-GbJ"/>
+                    <constraint firstItem="s5G-Bb-zVx" firstAttribute="leading" secondItem="Yd5-pS-o01" secondAttribute="trailing" constant="10" id="eKl-os-rDd"/>
+                    <constraint firstAttribute="bottom" secondItem="Yd5-pS-o01" secondAttribute="bottom" constant="10" id="o7o-ux-X9N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="QvN-eX-c2j" id="wrT-tz-dib"/>
+                <outlet property="headerImage" destination="Yd5-pS-o01" id="75e-jv-O3X"/>
+                <outlet property="titleLabel" destination="s5G-Bb-zVx" id="jwy-KE-sF0"/>
+            </connections>
+            <point key="canvasLocation" x="91.200000000000003" y="96.7016491754123"/>
+        </tableViewCell>
+    </objects>
+</document>
